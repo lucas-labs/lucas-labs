@@ -1,0 +1,359 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 116">
+  <defs>
+    <style>
+      :root {
+        --light: 82, 255, 180;
+        --dark: 13, 17, 23;
+        --duration: 2s;
+        --keywidth: 16px;
+      }
+
+      .c-dark {
+        fill: rgb(var(--dark));
+      }
+
+      .c-light {
+        fill: rgb(var(--light));
+      }
+
+      .darklines {
+        opacity: .1;
+        animation: darklinesflickering 1s linear infinite;
+      }
+
+      .lightlines {
+        opacity: .01;
+        animation: lightlinesflickering 1s linear infinite;
+      }
+
+      #frame {
+        filter: drop-shadow(0px 0px 4px rgba(var(--dark), 1)) drop-shadow(0px 0px 4px rgba(var(--dark), 1)) drop-shadow(0px 0px 4px rgba(var(--dark), 1)) drop-shadow(0px 0px 4px rgba(var(--dark), 1)) drop-shadow(0px 0px 4px rgba(var(--dark), 1));
+      }
+
+      .text {
+        animation: flickering 1s linear infinite;
+        filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, .2)) drop-shadow(0px 0px 5px rgba(var(--light), .6));
+      }
+
+      #h1 {
+        animation: keywriterH1 var(--duration) linear normal;
+      }
+
+      #e1 {
+        animation: keywriterE1 var(--duration) linear normal;
+      }
+
+      #l3 {
+        animation: keywriterL3 var(--duration) linear normal;
+      }
+
+      #l4 {
+        animation: keywriterL4 var(--duration) linear normal;
+      }
+
+      #o {
+        animation: keywriterO var(--duration) linear normal;
+      }
+
+      #t {
+        animation: keywriterT var(--duration) linear normal;
+      }
+
+      #h2 {
+        animation: keywriterH2 var(--duration) linear normal;
+      }
+
+      #e2 {
+        animation: keywriterE2 var(--duration) linear normal;
+      }
+
+      #e3 {
+        animation: keywriterE3 var(--duration) linear normal;
+      }
+
+      #r {
+        animation: keywriterR var(--duration) linear normal;
+      }
+
+      #excl {
+        animation: keywriterExcl var(--duration) linear normal;
+      }
+
+      #exclline {
+        opacity: 0;
+      }
+
+      #csr {
+        opacity: 1;
+        animation: csr var(--duration) linear normal, csr-flick 1s infinite;
+      }
+
+      @keyframes csr-flick {
+        0% { opacity: 1; }
+        49.99% { opacity: 1; } 
+        50% { opacity: 0; }
+        99.99% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      @keyframes flickering {
+        0% { opacity: 0.9; }
+        50% { opacity: 1; }
+        100% { opacity: 0.9; }
+      }
+
+      @keyframes darklinesflickering {
+        0% { opacity: 0.2; }
+        50% { opacity: 0.1; }
+        100% { opacity: 0.2; }
+      }
+
+      @keyframes lightlinesflickering {
+        0% { opacity: 0.01; }
+        50% { opacity: 0.015; }
+        100% { opacity: 0.01; }
+      }
+
+      @keyframes csr {
+        
+        0% { transform: translateX(-208px); }
+
+        9.99% { transform: translateX(-208px); }
+        10% { transform: translateX(-190px); }
+
+        14.99% { transform: translateX(-190px); }
+        15% { transform: translateX(-172px); }
+
+        19.99% { transform: translateX(-172px); }
+        20% { transform: translateX(-154px); }
+
+        24.99% { transform: translateX(-154px); }
+        25% { transform: translateX(-136px); }
+
+        29.99% { transform: translateX(-136px); }
+        30% { transform: translateX(-118px); }
+
+        34.99% { transform: translateX(-118px); }
+        35% { transform: translateX(-100px); }
+
+        39.99% { transform: translateX(-100px); }
+        40% { transform: translateX(-82px); }
+
+        44.99% { transform: translateX(-82px); }
+        45% { transform: translateX(-64px); }
+
+        49.99% { transform: translateX(-64px); }
+        50% { transform: translateX(-46px); }
+
+        54.99% { transform: translateX(-46px); }
+        55% { transform: translateX(-28px); }
+
+        59.99% { transform: translateX(-28px); }
+        60% { transform: translateX(-10px); }
+
+        64.99% { transform: translateX(-10px); }
+        65% { transform: translateX(0); }
+
+        100% { transform: translateX(0px); }
+      }
+
+
+      @keyframes keywriterH1 {
+        0% { opacity: 0; }
+        9.99% { opacity: 0; }
+        10% { opacity: 1; }
+      }
+
+      @keyframes keywriterE1 {
+        0% { opacity: 0; }
+        14.99% { opacity: 0; }
+        15% { opacity: 1; }
+        100% {opacity: 1; }
+      }
+
+      @keyframes keywriterL3 {
+        0% { opacity: 0; }
+        19.99% { opacity: 0; }
+        20% { opacity: 1; }
+        100% {opacity: 1; }
+      }
+
+      @keyframes keywriterL4 {
+        0% { opacity: 0; }
+        24.99% { opacity: 0; }
+        25% { opacity: 1; }
+        100% {opacity: 1; }
+      }
+
+      @keyframes keywriterO {
+        0% { opacity: 0; }
+        29.99% { opacity: 0; }
+        30% { opacity: 1; }
+        100% {opacity: 1; }
+      }
+
+      @keyframes keywriterT {
+        0% { opacity: 0; }
+        39.99% { opacity: 0; }
+        40% { opacity: 1; }
+        100% {opacity: 1; }
+      }
+
+      @keyframes keywriterH2 {
+        0% { opacity: 0; }
+        44.99% { opacity: 0; }
+        45% { opacity: 1; }
+        100% {opacity: 1; }
+      }
+
+      @keyframes keywriterE2 {
+        0% { opacity: 0; }
+        49.99% { opacity: 0; }
+        50% { opacity: 1; }
+        100% {opacity: 1; }
+      }
+
+      @keyframes keywriterR {
+        0% { opacity: 0; }
+        54.99% { opacity: 0; }
+        55% { opacity: 1; }
+        100% {opacity: 1; }
+      }
+
+      @keyframes keywriterE3 {
+        0% { opacity: 0; }
+        59.99% { opacity: 0; }
+        60% { opacity: 1; }
+        100% {opacity: 1; }
+      }
+
+      @keyframes keywriterExcl {
+        0% { opacity: 0; }
+        64.99% { opacity: 0; }
+        65% { opacity: 1; }
+        100% {opacity: 1; }
+      }
+    </style>
+  </defs>
+  <g id="bg">
+    <rect id="bg-2" data-name="bg" class="c-dark" width="512" height="116" />
+  </g>
+  <g id="prompt" class="text">
+    <path id="dollarsgn" class="c-light"
+      d="M23.9053,53.46c0-1.2935,1.0884-2.1079,2.8637-2.1079a6.143,6.143,0,0,1,4.2046,1.605l1.4927-1.687a7.199,7.199,0,0,0-4.6225-2.2509V45.2278H25.8213v3.8239c-2.8453.3491-4.7388,2.0051-4.7388,4.4666,0,5.1231,9.0059,4.5391,9.0059,7.8325,0,1.3116-1.0938,2.1914-3.1343,2.1914a9.1655,9.1655,0,0,1-5.352-1.9292L20.2812,63.61a10.4349,10.4349,0,0,0,5.54,2.2679v4.217h2.0225v-4.256c3.1216-.3859,5.0668-2.2095,5.0668-4.6942C32.9106,55.8416,23.9053,56.3586,23.9053,53.46Z" />
+    <path id="l1" class="c-light"
+      d="M47.7656,64.8767a2.4387,2.4387,0,0,1-2.6709-2.76V46.3372h-7.76v2.3066h4.87V61.9426c0,3.417,1.7129,5.3091,4.8867,5.3091a9.3423,9.3423,0,0,0,3.9062-.8252l-.6958-2.145A6.311,6.311,0,0,1,47.7656,64.8767Z" />
+    <path id="u" class="c-light"
+      d="M64.7007,62.4246c-1.4146,1.6811-2.49,2.3379-3.9683,2.3379-2.1313,0-2.9512-1.168-2.9512-3.6182V52.73h-2.89v8.793c0,3.6909,1.5,5.7285,4.8193,5.7285a6.6835,6.6835,0,0,0,5.1475-2.7109h.1157l.23,2.3628H67.59V52.73h-2.89Z" />
+    <path id="c" class="c-light"
+      d="M80.42,64.8767a4.79,4.79,0,0,1-5.0669-5.0361A4.8512,4.8512,0,0,1,80.5,54.7576a5.6719,5.6719,0,0,1,3.6846,1.4814l1.39-1.8242a7.32,7.32,0,0,0-5.1992-2.0327c-4.3076,0-7.98,2.7138-7.98,7.4585,0,4.6972,3.35,7.4111,7.7915,7.4111a8.6426,8.6426,0,0,0,5.68-2.1831L84.625,63.21A6.6571,6.6571,0,0,1,80.42,64.8767Z" />
+    <path id="a" class="c-light"
+      d="M96.7417,52.3821a12.7416,12.7416,0,0,0-6.4082,2.0088l1.1035,1.9277a9.89,9.89,0,0,1,4.7905-1.5957c2.521,0,3.46,1.4077,3.563,3.16-7.1562.5371-10.039,2.1015-10.039,5.2793,0,2.4965,2.0835,4.09,4.7934,4.09a9.3016,9.3016,0,0,0,5.4268-2.187h.0923l.23,1.8389H102.68V58.3679C102.68,54.6252,100.6484,52.3821,96.7417,52.3821Zm3.0488,10.67a7.1154,7.1154,0,0,1-4.4233,1.9043c-1.5161,0-2.793-.5894-2.793-2.0117,0-1.6939,1.6485-2.813,7.2163-3.2119Z" />
+    <path id="s" class="c-light"
+      d="M114.5684,58.5159c-2.7818-.5928-3.9131-1.0284-3.9131-2.1382,0-.9707.8159-1.8032,2.9238-1.8032a8.5529,8.5529,0,0,1,4.7227,1.4521l1.3549-1.8027a10.8666,10.8666,0,0,0-5.8261-1.8418c-3.9229,0-6.0542,1.7622-6.0542,4.1333,0,2.1445,1.7568,3.44,5.5005,4.2163,3.5688.7344,4.1582,1.37,4.1582,2.3725,0,1.0645-1.0415,1.9317-3.2144,1.9317a10.278,10.278,0,0,1-6.0391-1.86l-1.2861,1.8716a12.638,12.638,0,0,0,6.96,2.2046c4.1836,0,6.4819-1.9468,6.4819-4.32C120.3369,60.7131,119.1787,59.5256,114.5684,58.5159Z" />
+    <path id="dot" class="c-light"
+      d="M131.0732,61.8333a2.7109,2.7109,0,1,0,2.6148,2.7089A2.5971,2.5971,0,0,0,131.0732,61.8333Z" />
+    <path id="l2" class="c-light"
+      d="M152.1641,64.8767a2.4387,2.4387,0,0,1-2.6709-2.76V46.3372h-7.76v2.3066h4.87V61.9426c0,3.417,1.7129,5.3091,4.8867,5.3091a9.3425,9.3425,0,0,0,3.9063-.8252l-.6958-2.145A6.3114,6.3114,0,0,1,152.1641,64.8767Z" />
+    <path id="a2" class="c-light"
+      d="M166.34,52.3821a12.7419,12.7419,0,0,0-6.4082,2.0088l1.1035,1.9277a9.89,9.89,0,0,1,4.7906-1.5957c2.521,0,3.46,1.4077,3.563,3.16-7.1563.5371-10.0391,2.1015-10.0391,5.2793,0,2.4965,2.0835,4.09,4.7935,4.09a9.3016,9.3016,0,0,0,5.4267-2.187h.0923l.23,1.8389h2.3862V58.3679C172.2788,54.6252,170.2471,52.3821,166.34,52.3821Zm3.0489,10.67a7.1154,7.1154,0,0,1-4.4234,1.9043c-1.5161,0-2.7929-.5894-2.7929-2.0117,0-1.6939,1.6484-2.813,7.2163-3.2119Z" />
+    <path id="b" class="c-light"
+      d="M184.4883,52.3821a6.636,6.636,0,0,0-4.5225,2.0166h-.0923l.127-2.6074V46.3372h-2.89V66.9036h2.2828l.2646-1.5664h.0923a6.5593,6.5593,0,0,0,4.2612,1.9145c3.3032,0,6.32-2.8193,6.32-7.6724C190.3315,55.2122,188.2344,52.3821,184.4883,52.3821Zm-1.0293,12.46a5.3322,5.3322,0,0,1-3.4585-1.4511V56.6853a5.3567,5.3567,0,0,1,3.74-1.8936c2.5537,0,3.6328,1.8594,3.6328,4.8277C187.373,62.97,185.6685,64.842,183.459,64.842Z" />
+    <path id="s2" class="c-light"
+      d="M201.5674,58.5159c-2.7818-.5928-3.9131-1.0284-3.9131-2.1382,0-.9707.8159-1.8032,2.9238-1.8032a8.5526,8.5526,0,0,1,4.7227,1.4521l1.355-1.8027a10.8669,10.8669,0,0,0-5.8262-1.8418c-3.9229,0-6.0542,1.7622-6.0542,4.1333,0,2.1445,1.7568,3.44,5.5005,4.2163,3.5688.7344,4.1582,1.37,4.1582,2.3725,0,1.0645-1.0415,1.9317-3.2144,1.9317a10.2775,10.2775,0,0,1-6.039-1.86l-1.2862,1.8716a12.6383,12.6383,0,0,0,6.96,2.2046c4.1836,0,6.4819-1.9468,6.4819-4.32C207.3359,60.7131,206.1777,59.5256,201.5674,58.5159Z" />
+    <polygon id="gtsign" class="c-light"
+      points="229.803 51.627 238.245 57.215 238.245 57.331 229.803 62.92 229.803 65.641 240.726 58.342 240.726 56.204 229.803 48.906 229.803 51.627" />
+  </g>
+  <g id="text" class="text">
+    <polygon id="h1" class="c-light"
+      points="292.461 56.161 282.881 56.161 282.881 47.79 281.535 47.79 281.535 66.904 282.881 66.904 282.881 57.336 292.461 57.336 292.461 66.904 293.807 66.904 293.807 47.79 292.461 47.79 292.461 56.161" />
+    <path id="e1" class="c-light"
+      d="M305.5762,52.6272a6.9847,6.9847,0,0,0-6.9824,7.3252,7.017,7.017,0,0,0,7.3466,7.2993,9.06,9.06,0,0,0,5.2842-1.64l-.5322-.9751A7.9307,7.9307,0,0,1,306.02,66.14a5.8337,5.8337,0,0,1-6.0933-5.9981h11.8043a6.5318,6.5318,0,0,0,.0742-1.07C311.8047,55.0764,309.3848,52.6272,305.5762,52.6272Zm-5.6076,6.4185a5.6846,5.6846,0,0,1,5.6232-5.315c2.8434,0,4.8223,1.7355,5.0037,5.315Z" />
+    <path id="l3" class="c-light"
+      d="M325.9482,66.1165c-1.9775,0-3.038-1.04-3.038-3.2388V46.0393h-6.5733v1.12h5.2852V62.7034c0,3.167,1.5049,4.5483,4.1416,4.5483a7.2235,7.2235,0,0,0,3.4756-.8623l-.419-.9956A6.5164,6.5164,0,0,1,325.9482,66.1165Z" />
+    <path id="l4" class="c-light"
+      d="M343.3477,66.1165c-1.9776,0-3.0372-1.04-3.0372-3.2388V46.0393h-6.5742v1.12h5.2852V62.7034c0,3.167,1.5058,4.5483,4.1426,4.5483a7.22,7.22,0,0,0,3.4746-.8623l-.418-.9956A6.52,6.52,0,0,1,343.3477,66.1165Z" />
+    <path id="o" class="c-light"
+      d="M357.27,52.6272c-3.6494,0-6.75,2.6763-6.75,7.3413,0,4.6065,3.1006,7.2832,6.75,7.2832s6.75-2.6767,6.75-7.2832C364.02,55.3035,360.9189,52.6272,357.27,52.6272Zm0,13.4893c-3.1406,0-5.4043-2.4849-5.4043-6.148,0-3.6714,2.2637-6.206,5.4043-6.206s5.4043,2.5346,5.4043,6.206C362.6738,63.6316,360.41,66.1165,357.27,66.1165Z" />
+    <path id="t" class="c-light"
+      d="M395.0645,66.1243c-3.1075,0-3.8848-1.6221-3.8848-4.336V54.095h7.41v-1.12h-7.41v-4.61h-1.0928l-.1709,4.61-4.2383.1236v.9961h4.2149v7.601c0,3.3116,1.164,5.5557,4.9883,5.5557a10.81,10.81,0,0,0,4.24-.8623l-.3535-.9878A9.6411,9.6411,0,0,1,395.0645,66.1243Z" />
+    <path id="h2" class="c-light"
+      d="M410.6621,52.6272c-2.2168,0-3.9121,1.2949-5.5664,3.1147h-.0664l.082-3.6528v-6.05h-1.2881V66.9036h1.2881V56.9221c2.0049-2.1045,3.3682-3.1362,5.3467-3.1362,2.7559,0,3.917,1.501,3.917,4.6133v8.5044h1.2871V58.2278C415.6621,54.4519,414.041,52.6272,410.6621,52.6272Z" />
+    <path id="e2" class="c-light"
+      d="M427.375,52.6272a6.9842,6.9842,0,0,0-6.9824,7.3252,7.017,7.017,0,0,0,7.3467,7.2993,9.06,9.06,0,0,0,5.2841-1.64l-.5322-.9751a7.9335,7.9335,0,0,1-4.6738,1.5034,5.8329,5.8329,0,0,1-6.0924-5.9981h11.8043a6.5318,6.5318,0,0,0,.0742-1.07C433.6035,55.0764,431.1826,52.6272,427.375,52.6272Zm-5.6076,6.4185a5.6846,5.6846,0,0,1,5.6232-5.315c2.8435,0,4.8214,1.7355,5.0028,5.315Z" />
+    <path id="r" class="c-light"
+      d="M441.6,56.4167h-.0586l-.1474-3.4414h-1.0928V66.9036h1.2881V58.2009c1.9355-3.17,4.0429-4.3491,6.3711-4.3491a6.5593,6.5593,0,0,1,2.6318.5064l.3613-1.1509a6.0829,6.0829,0,0,0-2.8056-.58A7.9052,7.9052,0,0,0,441.6,56.4167Z" />
+    <path id="e3" class="c-light"
+      d="M462.1738,52.6272a6.9848,6.9848,0,0,0-6.9824,7.3252,7.0176,7.0176,0,0,0,7.3467,7.2993,9.058,9.058,0,0,0,5.2842-1.64l-.5323-.9751a7.9281,7.9281,0,0,1-4.6728,1.5034,5.8337,5.8337,0,0,1-6.0933-5.9981h11.8052a6.6434,6.6434,0,0,0,.0732-1.07C468.4023,55.0764,465.9814,52.6272,462.1738,52.6272Zm-5.6076,6.4185a5.6849,5.6849,0,0,1,5.6242-5.315c2.8426,0,4.82,1.7355,5.0018,5.315Z" />
+    <path id="excl" class="c-light"
+      d="M478.4639,49.52l-.0157-2.0508h1.2383l-.0156,2.0508-.1289,11.0263h-.9492Zm.6035,14.06a1.8433,1.8433,0,1,0,1.6816,1.8321A1.6983,1.6983,0,0,0,479.0674,63.5793Z" />
+  </g>
+  <g id="cursor" class="text">
+    <rect id="csr" class="c-light" x="489.1504" y="43.4963" width="2.5684" height="29.0073" />
+  </g>
+  <g id="lines" data-name="lines">
+    <g id="lightlines" class="lightlines">
+      <rect class="c-light" y="114" width="512" height="2" />
+      <rect class="c-light" y="110" width="512" height="2" />
+      <rect class="c-light" y="106" width="512" height="2" />
+      <rect class="c-light" y="102" width="512" height="2" />
+      <rect class="c-light" y="98" width="512" height="2" />
+      <rect class="c-light" y="94" width="512" height="2" />
+      <rect class="c-light" y="90" width="512" height="2" />
+      <rect class="c-light" y="86" width="512" height="2" />
+      <rect class="c-light" y="82" width="512" height="2" />
+      <rect class="c-light" y="78" width="512" height="2" />
+      <rect class="c-light" y="74" width="512" height="2" />
+      <rect class="c-light" y="70" width="512" height="2" />
+      <rect class="c-light" y="66" width="512" height="2" />
+      <rect class="c-light" y="62" width="512" height="2" />
+      <rect class="c-light" y="58" width="512" height="2" />
+      <rect class="c-light" y="54" width="512" height="2" />
+      <rect class="c-light" y="50" width="512" height="2" />
+      <rect class="c-light" y="46" width="512" height="2" />
+      <rect class="c-light" y="42" width="512" height="2" />
+      <rect class="c-light" y="38" width="512" height="2" />
+      <rect class="c-light" y="34" width="512" height="2" />
+      <rect class="c-light" y="30" width="512" height="2" />
+      <rect class="c-light" y="26" width="512" height="2" />
+      <rect class="c-light" y="22" width="512" height="2" />
+      <rect class="c-light" y="18" width="512" height="2" />
+      <rect class="c-light" y="14" width="512" height="2" />
+      <rect class="c-light" y="10" width="512" height="2" />
+      <rect class="c-light" y="6" width="512" height="2" />
+      <rect class="c-light" y="2" width="512" height="2" />
+    </g>
+    <g id="darklines" class="darklines">
+      <rect class="c-dark" y="112" width="512" height="2" />
+      <rect class="c-dark" y="108" width="512" height="2" />
+      <rect class="c-dark" y="104" width="512" height="2" />
+      <rect class="c-dark" y="100" width="512" height="2" />
+      <rect class="c-dark" y="96" width="512" height="2" />
+      <rect class="c-dark" y="92" width="512" height="2" />
+      <rect class="c-dark" y="88" width="512" height="2" />
+      <rect class="c-dark" y="84" width="512" height="2" />
+      <rect class="c-dark" y="80" width="512" height="2" />
+      <rect class="c-dark" y="76" width="512" height="2" />
+      <rect class="c-dark" y="72" width="512" height="2" />
+      <rect class="c-dark" y="68" width="512" height="2" />
+      <rect class="c-dark" y="64" width="512" height="2" />
+      <rect class="c-dark" y="60" width="512" height="2" />
+      <rect class="c-dark" y="56" width="512" height="2" />
+      <rect class="c-dark" y="52" width="512" height="2" />
+      <rect class="c-dark" y="48" width="512" height="2" />
+      <rect class="c-dark" y="44" width="512" height="2" />
+      <rect class="c-dark" y="40" width="512" height="2" />
+      <rect class="c-dark" y="36" width="512" height="2" />
+      <rect class="c-dark" y="32" width="512" height="2" />
+      <rect class="c-dark" y="28" width="512" height="2" />
+      <rect class="c-dark" y="24" width="512" height="2" />
+      <rect class="c-dark" y="20" width="512" height="2" />
+      <rect class="c-dark" y="16" width="512" height="2" />
+      <rect class="c-dark" y="12" width="512" height="2" />
+      <rect class="c-dark" y="8" width="512" height="2" />
+      <rect class="c-dark" y="4" width="512" height="2" />
+      <rect class="c-dark" width="512" height="2" />
+    </g>
+    <path id="frame" class="c-dark" d="M0,0V116H512V0ZM508,112H4V4H508Z" />
+  </g>
+</svg>
