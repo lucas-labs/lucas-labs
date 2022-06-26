@@ -2,7 +2,7 @@
   <defs>
     <style>
       :root {
-        --light: 82, 255, 180;
+        --light: 71, 166, 255;
         --dark: 13, 17, 23;
         --duration: 2s;
         --keywidth: 16px;
