@@ -17,8 +17,12 @@ Currently building with:
 
 $lucas.labs > beyond_work  
 When I’m not coding for work, I’m coding for fun—exploring new tools,
-contributing to open-source, and experimenting with cool tech.  
-And when I’m not coding, I’m either debugging, catching up on sleep,
+contributing to open-source, and experimenting with cool tech.
+
+Currently, I'm actively helping maintaining the pupular
+`material-extensions/vscode-material-icon-theme` vscode extension.
+ 
+When I’m not coding, I’m either debugging, catching up on sleep,
 or accidentally using my keyboard as a pillow (pro tip: the key
 patterns make for a bold new look 😴). 
 ```
